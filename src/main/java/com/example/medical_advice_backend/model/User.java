@@ -20,6 +20,7 @@ public class User{
     private List<String> emergincyContact;
     private List<String> allergy;
     private List<String> vaccine;
+    private List<String> meditation;
 
 
     public long getUserId() {
