@@ -1,8 +1,18 @@
 package com.example.medical_advice_backend.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import java.lang.IllegalArgumentException;
+
+
 import java.io.*;
 import java.time.LocalDate;
+import java.util.List;
 
+@Entity
 public class User{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -59,16 +69,16 @@ public class User{
         return gender;
     }
 
-    public void setGender(String gender) throws IllegalArguementException{
+    public void setGender(String gender) throws IllegalArgumentException{
         if (gender == null || gender.equals("")){
-            throw new IllegalArguementException("Please enter your gender");
+            throw new IllegalArgumentException("Please enter your gender");
         }
         if (gender.toLowerCase() == "male") {
             this.gender = false;
         } else if (gender.toLowerCase() == "female"){
             this.gender = true;
         } else {
-            throw new IllegalArguementException("Please enter your gender");
+            throw new IllegalArgumentException("Please enter your gender");
         }
     }
 
@@ -77,7 +87,7 @@ public class User{
     }
 
     public void setPhone(String phone) {
-        this.phone = phoen;
+        this.phone = phone;
     }
 
     public String getAddress() {
@@ -100,7 +110,4 @@ public class User{
         this.date = date;
     }
 
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.singletonList(new SimpleGrantedAuthority(role));
-    }
 }
