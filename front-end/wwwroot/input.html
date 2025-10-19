@@ -20,11 +20,10 @@
         <h1>Bandaid.AI <i class="fa-solid fa-bandage"></i></h1>
     </a>
     <p>Get Your Questions Answered Quickly</p>
-<div class="user-links">
-    <input type="file" id="fileInput" accept="image/*" />
-    <button onclick="uploadFiles()">Upload</button>
-    <div id="message"></div>
-    </div>
+    <form enctype="multipart/form-data">
+        <input id="file-input" name="file" type="file" accept="image/*">
+        <input id="submit-input" type="submit" value="Submit">
+    </form>
 </body>
 
 </html>
