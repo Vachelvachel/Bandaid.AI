@@ -50,6 +50,46 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
+		<!-- AWS SDK for SageMaker -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>sagemaker</artifactId>
+			<version>2.20.162</version>
+		</dependency>
+		
+		<!-- AWS SDK for SageMaker Runtime -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>sagemakerruntime</artifactId>
+			<version>2.20.162</version>
+		</dependency>
+		
+		<!-- AWS SDK Core -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>aws-core</artifactId>
+			<version>2.20.162</version>
+		</dependency>
+		
+		<!-- AWS SDK for Lambda (if needed for serverless deployment) -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>lambda</artifactId>
+			<version>2.20.162</version>
+		</dependency>
+		
+		<!-- JSON processing -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		
+		<!-- Validation -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
