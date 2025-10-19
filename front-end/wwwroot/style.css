@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: white;
+    height: 100%;
+}
+
+h1 {
+    font-size: 500%;
+    display: block;
+    margin-bottom: 0%;
+    margin-left: 10%;
+}
+a > h1 {
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.fa-solid{
+    /* width: 50px;
+    height: 50px; */
+    display: inline-block;
+    color: white;
+}
+.fa-solid.fa-comment-medical{
+    color: black;
+    margin-left: 5px;
+}
+p{
+    display: block;
+    margin: 5% 5% 100px 15%;
+}
+.user-links > a{
+    padding: 20px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    margin: 15px;
+    /* height: 50px; */
+    float: left;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+form > input, form > button{
+    padding: 20px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    margin: 15px;
+    /* height: 50px; */
+    float: left;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+form > input[type='submit']:hover{
+    border: 3px solid grey;
+}
+.user-links{
+    min-height: 100px;
+    margin-left: 15%;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-links > a:hover{
+    border: 3px solid grey;
+}
